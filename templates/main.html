@@ -7,12 +7,26 @@
     <title>Youtube Video Downloader</title>
 </head>
 <body>
+   <div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Youtube Video Downloader</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+           
+        </div>
+    </nav>
+   </div>
     <div class="container">
-        <form action="" method="post">
+        <form action="" method="post" class="pt-5">
             {% csrf_token %}
-            <div class=" row mb-3">
+            <div class=" row  mb-2 pt-2">
                 <label for="link" class="form-label">Enter URL:</label>
-                <input type="text" class="form-control" id="link" name="link">
+                <input type="text" class="form-control" id="link" name="link" placeholder="Enter Link">
                 
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
